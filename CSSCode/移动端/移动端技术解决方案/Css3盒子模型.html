@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(127, 188, 241);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div:nth-child(2) {
+            /* 加上下面这句话之后就把盒子变为了css3的盒子模型，内边距与外边距不会撑大盒子，但在PC端有兼容性问题 */
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+
+</body>
+
+</html>

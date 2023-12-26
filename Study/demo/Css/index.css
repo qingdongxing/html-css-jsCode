@@ -1,0 +1,88 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Aguazyuan" 'Courier New', monospace;
+}
+@font-face {
+    font-family: 'lmj';
+    src: url(../../font/Hopsters.ttf);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffafa;
+    position: relative;
+
+}
+
+.all-content {
+    width: 30%;
+    height: 750px;
+    background-color: rgb(231, 229, 239);
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 0;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.all-content .part-1 {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    margin: 40px auto;
+}
+
+.all-content .part-1 .my-img a img {
+    width: 80px;
+    height: 80px;
+}
+
+.name {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.part-2 {
+    width: 90%;
+    height: 240px;
+    background-color: #fffafa;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 5%;
+    box-shadow: 1px 10px 32px 1px rgba(186, 175, 221, 0.37);
+}
+
+.part-2 .id span {
+    display: block;
+}
+
+.part-2 .id {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.part-2 .mailbox {
+    margin: 20px 20px;
+}
+
+.part-2 .mailbox span {
+    display: block;
+}
+
+
+
+.part-3 {
+    width: 90%;
+    height: 240px;
+    background-color: #fffafa;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+    box-shadow: 1px 10px 32px 1px rgba(186, 175, 221, 0.37);
+}

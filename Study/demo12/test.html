@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .myfrom{
+            margin: 0 auto;
+            width: 300px;
+        }
+        .imgs {
+            margin-top: 50px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myfrom">
+        <form action="" method="post" onchange="change()">
+            <select name="f1" id="f1">
+                <option value="img/1.jpg">花朵</option>
+                <option value="img/2.jpg">夕阳</option>
+                <option value="img/3.jpg">林间小路</option>
+                <option value="img/4.jpg">天空</option>
+                <option value="img/5.jpg">溪河</option>
+            </select>
+        </form>
+        <div class="imgs">
+            <img src="img/1.jpg" alt="" id="img">
+        </div>
+    </div>
+
+    <script>
+        function change() {
+            document.getElementById("img").src = document.getElementById("f1").value
+        }
+    </script>
+</body>
+
+</html>

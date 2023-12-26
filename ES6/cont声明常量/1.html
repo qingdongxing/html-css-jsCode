@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //常量
+        const myname = "xiaosong" 
+        myname = "tiechui"
+
+        //无法重新定义
+        // const myname = "tiechui";
+
+
+        //块级
+        {
+            const name = "xiaosong"
+        }
+        console.log(name);
+
+        //声明不提升
+        const name2 = "qingdong"
+
+        function test(){
+            console.log(name2);//暂存性死区
+            const name2 = "hhhhh"
+           
+        }
+
+        test()
+
+         //不与顶层对象挂钩
+         var myage = 100;
+        console.log(window.myage);
+        const myage1 = 100;
+        console.log(window.myage1);
+    </script>
+    
+</body>
+</html>

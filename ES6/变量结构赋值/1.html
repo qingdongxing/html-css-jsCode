@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //结构赋值
+        let arr = [1, 2, 3]
+        let [a, b, c] = arr
+        console.log(a, b, c);
+
+        //交换两个数据
+        let x = 1;
+        let y = 2;
+        [y, x] = [x, y]
+        console.log(x, y);
+
+        //
+        let [, , a1] = arr;
+        console.log(a1);
+
+        let arr1 = [1, [2, 3, 4], 5, 6]
+        let [a2, p2, c2] = arr1;
+        let [a3, [p3,,], c3] = arr1;
+
+        //默认值
+        let [x1=1] = [100]
+        console.log(x1);
+        let [x2=1] = []
+        console.log(x2);
+
+        //对象
+        let obj = {
+            name: "xiaosong"
+            ,
+            age: 100
+        }
+
+        let {name,age} = obj
+
+        //字符串
+        let myname = "xiaoming"
+        let [r,w,z] = myname
+
+    </script>
+
+</body>
+
+</html>

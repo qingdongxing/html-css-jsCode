@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式转换</title>
+    <style>
+        /* 块元素可以设置宽高  行内元素不可以设置宽高   */
+        a {
+            width: 200px;
+            height: 50px;
+            background-color: burlywood;
+            /* 把行内元素转换为块元素 */
+            display: block;
+        }
+
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: blueviolet;
+            /* 把块元素转换为行内元素 */
+            display: inline;
+        }
+
+        span {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(211, 93, 150);
+            /* 转换为行内块元素 */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#">行内元素转换为块元素</a>
+
+    <div>块元素转换为行内元素</div>
+
+    <span>转换为行内块元素</span>
+
+    <span>转换为行内块元素</span>
+
+</body>
+
+</html>

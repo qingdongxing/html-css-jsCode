@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">1111</button>
+    <div>3333</div>
+    <script>
+        var btn = document.getElementById('btn')
+        btn.onclick = function(){
+            alert('2222');
+        }
+
+        var divEle = document.querySelector('div');
+        divEle.onclick = function(){
+            alert('4444');
+        }
+
+        btn.onclick = function(){
+            divEle.innerHTML = '33333333333333 <\br>';
+        }
+
+
+    </script>
+</body>
+</html>

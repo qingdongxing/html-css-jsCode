@@ -1,0 +1,71 @@
+/* 清除内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing:border-box;
+}
+/* 把斜体文字变正常 */
+em,
+i {
+    font-style: normal
+}
+/* 去掉小圆点 */
+li {
+    list-style: none
+}
+/* 以中线对齐 */
+img {
+    /* 照顾兼容性 */
+    border: 0;
+    vertical-align: middle
+}
+/* 鼠标样式 */
+button {
+    cursor: pointer
+}
+/* 去掉链接样式 */
+a {
+    color: #666;
+    text-decoration: none
+}
+/* 鼠标经过链接 */
+a:hover {
+    color: #c81623
+}
+/* 按钮 输入框  */
+button,
+input {
+    /* "\5B8B\4F53" 指宋体 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
+     "\5B8B\4F53", sans-serif;
+     /* 去掉默认的灰色边框 */
+     border: 0;
+     outline: none;
+
+}
+
+body {
+    /* CSS3抗锯齿性 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+/*  */
+.hide,
+.none {
+    display: none
+}
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    zoom: 1
+}

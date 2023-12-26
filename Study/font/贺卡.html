@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+    .all{
+      width:250px;
+      height: 300px;
+      border: 1px solid white;
+      transition: width 2s, height 2s, transform 2.5s;
+      box-shadow: 2px 2px 2px 2px #ccc;
+
+    }
+    .all:hover{
+      width: 350px;
+      height: 350px;
+    }
+    @keyframes myfirst{
+    from {background-image:linear-gradient(rgb(202, 222, 47),rgb(204, 218, 179));}
+    
+  }
+    .all .head{
+      width: 100%;
+      height: 60%;
+      background-image:linear-gradient(rgb(100, 206, 157),rgb(179, 179, 218));
+      font-family: wbs;
+      font-size: 30px;
+      color: #ffffff;
+      text-shadow: 2px 2px 2px #ccc;
+      text-align: center;
+      line-height: 200px;
+      animation:myfirst 4s;
+    -webkit-animation:myfirst 4s; 
+    }
+    
+    .all .botter{
+      width: 100%;
+      height: 40%;
+      text-align: center;
+      line-height: 120px;
+      font-family:wbs;
+      font-size: 30px;
+    }
+    @font-face {
+      font-family: 'wbs';
+      src: url(NewJourneyDemo.otf);
+  }
+  </style>
+</head>
+<body>
+  <div class="all">
+    <div class="head">Happy NewYear</div>
+    <div class="botter">February 10, 2024</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //对象简写
+        // let name = "moudleA"
+        // let obj = {
+        //     name,//name:name
+        //     test1(){
+
+        //     },//test1:function(){}
+        //     test2(){
+
+        //     }
+        // } 
+        //对象属性 表达式
+        // let name = "a" 
+        // let obj = {
+        //     [name+"bc"]:"xiaosong",
+        //     [name+"test1"](){},
+        //     [name+"test2"](){}
+        // }
+        // console.log(obj);
+
+        //扩展运算fu
+        // let obj = {
+        //     name:"xiaosong"
+        // }
+        // let obj1 = {
+        //     age:100
+        // }
+
+        // let obj2 = {
+        //     ...obj1,
+        //     ...obj
+        // }
+        // // console.log(obj2);
+
+        // //Object.assign
+        // console.log(Object.assign(obj,obj1,obj2))
+
+        //Object.is
+        console.log(Object.is(5, 5)); // TRUE
+        console.log(Object.is(5, "5"));// false
+        console.log(Object.is({}, {}));// false
+        console.log(Object.is(parseInt("kerwin"), NaN));//TRUE
+        console.log(Object.is(+0, -0))//false
+        console.log(+0 === -0)//TRUE
+    </script>
+
+</body>
+
+</html>

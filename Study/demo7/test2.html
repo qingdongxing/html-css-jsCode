@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Radio Button</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        input[type="radio"] {
+            display: none;
+            /* 隐藏原有的单选框 */
+        }
+
+        input[type="radio"]+label {
+            position: relative;
+            padding-left: 25px;
+            /* 设置 label 的左边距，以留出空间放置自定义样式 */
+            cursor: pointer;
+        }
+
+        input[type="radio"]+label:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            /* 调整自定义样式的位置 */
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            /* 创建圆形 */
+            border: 2px solid #ccc;
+            /* 设置边框样式 */
+        }
+
+        input[type="radio"]:checked+label:before {
+            background-color: #f00;
+            /* 设置选中时的背景颜色 */
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="radio" name="color" id="red" value="red">
+        <label for="red">Red</label><br>
+
+        <input type="radio" name="color" id="green" value="green">
+        <label for="green">Green</label><br>
+
+        <input type="radio" name="color" id="blue" value="blue">
+        <label for="blue">Blue</label><br>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动-after伪元素清除浮动</title>
+    <style>
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .clearfix {
+            zoom: 1;
+        }
+
+        .fathar {
+            width: 800px;
+            border: 1px solid rgba(117, 209, 84, 0.934);
+            background-color: rgba(117, 209, 84, 0.934) ;
+            margin: 0 auto;
+        }
+
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(240, 81, 81);
+        }
+
+        .damao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(52, 7, 7);
+        }
+        .aaaaaaa {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fathar clearfix">
+        <div class="ermao">二毛</div>
+        <div class="ermao">二毛</div>
+        <div class="damao">大毛</div>
+    </div>
+
+</body>
+
+</html>

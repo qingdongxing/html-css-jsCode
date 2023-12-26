@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+
+    <script>
+
+        //块级作用域
+        {
+            var i = 10;
+            let a = 20;
+        }
+
+        // console.log(i);
+
+        // console.log(a);
+
+        //可以访问
+        for(var b =0 ; i<5 ; i++){
+
+        }
+
+        // console.log(b);
+        //可以访问
+        for(var b =1 ; i<5 ; i++){
+
+        }
+
+        // console.log(b);
+        //不可访问
+        for(let c =0 ; c<5 ; c++){
+
+        }
+
+        // console.log(c);
+
+        var oli = document.querySelectorAll("ul li")
+        for(var i = 0; i<oli.length ;i++){
+            oli[i].index = i ;
+            oli[i].onclick = function(){
+                // console.log(i); 333
+                // console.log(this.index); 123
+            }
+
+        }
+    </script>
+</body>
+
+</html>

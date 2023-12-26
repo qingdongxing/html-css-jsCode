@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见的网页布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 62px;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box .banner {
+            margin: 20px auto;
+            width: 1210px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+
+        .box .ulli {
+            width: 1210px;
+            height: 150px;
+            margin: 20px auto;
+        }
+
+        .box .ulli li {
+            width: 295px;
+            height: 150px;
+            float: left;
+            background-color: antiquewhite;
+            margin-right: 10px;
+        }
+
+        .box .ulli .listli {
+            margin-right: 0;
+        }
+
+        .box .listtype {
+            width: 1210px;
+            height: 360px;
+            margin: 20px auto;
+        }
+
+        .box .listtype div {
+            width: 295px;
+            height: 360px;
+            float: left;
+            background-color: antiquewhite;
+            margin-right: 10px;
+        }
+
+        .box .listtype .lastdiv {
+            margin-right: 0;
+        }
+
+        .fotter {
+            height: 200px;
+            background-color: antiquewhite;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="box">
+        <div class="banner">banner</div>
+        <ul class="ulli">
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li class="listli">1</li>
+        </ul>
+        <div class="listtype">
+            <div>2</div>
+            <div>2</div>
+            <div>2</div>
+            <div class="lastdiv">2</div>
+        </div>
+    </div>
+    <div class="fotter">
+        fotter
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+
+    </ul>
+    <script>
+        let arr = ["xiao", "mign", "hong"]
+        let newlist = arr.map(function (item,index) {
+            return `<li class="${index==0?'active':''}">
+        <b>${item}</b>
+    </li>`
+        })
+        console.log(newlist);
+
+        //获取ul节点 
+        let oul = document.querySelector("ul")
+        //赋值
+        oul.innerHTML = newlist.join("")
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.nav a {
+    width: 120px;
+    height: 58px;
+    /* background-color: rgb(154, 199, 238); */
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 58px;
+    color: #fff;
+    border-radius: 10px;
+}
+.nav .bg1 {
+    background-color: rgb(154, 199, 238);
+    
+}
+.nav .bg1:hover {
+    background-color: rgb(52, 152, 238);
+    
+}
+.nav .bg2 {
+    background-color: rgb(210, 238, 154);
+    
+}
+.nav .bg2:hover {
+    background-color: rgb(177, 236, 61);
+    
+}
+.nav .bg3 {
+    background-color: rgb(154, 238, 174);
+    
+}
+.nav .bg3:hover {
+    background-color: rgb(55, 245, 100);
+    
+}
+.nav .bg4 {
+    background-color: rgb(238, 185, 154);
+    
+}
+.nav .bg4:hover {
+    background-color: rgb(241, 120, 49);
+    
+}
+.nav .bg5 {
+    background-color: rgb(238, 154, 182);
+    
+}
+.nav .bg5:hover {
+    background-color: rgb(238, 53, 115);
+    
+}

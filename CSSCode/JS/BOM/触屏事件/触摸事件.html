@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var div = document.querySelector('div');
+        div,addEventListener('touchstart' , function(touchEvent){
+            console.log('我摸了你');
+            console.log(touchEvent.touches);
+             console.log(touchEvent.targetTouches);
+            console.log(touchEvent.targetTouches[0]);
+        });
+        div,addEventListener('touchmove' , function(){
+            console.log('我一直摸');
+        });
+        div,addEventListener('touchend' , function(){
+            console.log('我走了');
+            console.log(touchEvent.changedTouches);
+        });
+    </script>
+
+</body>
+
+</html>

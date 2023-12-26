@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding 不会撑开盒子大小的情况</title>
+    <style>
+
+        /* 如果盒子本身没有指定width / height 属性那么padding不会撑开盒子的大小 */
+        h1 {
+            height: 200px;
+            background-color: aqua;
+            /* padding: 50px; */
+        }
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(110, 230, 130);
+        }
+
+        div p {
+            /* p会继承div的行高 */
+            padding: 40px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <h1></h1>
+    <div>
+        <p>sfnhjasdfv</p>
+    </div>
+    
+</body>
+</html>

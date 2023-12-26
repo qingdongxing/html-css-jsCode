@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        .img img {
+            width: 300px;
+            height: 400px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <select name="s1" id="s1" onchange="pro()">
+                <option value="img/izzy.jpg">izzy</option>
+                <option value="img/jim.png">吉姆莫里森</option>
+                <option value="img/bowie.jpg">大卫鲍伊</option>
+                <option value="img/curt.jpg">柯特科本</option>
+                <option value="img/rose.jpg">axl rose</option>
+            </select>
+        </form>
+        <div class="img">
+            <img src="img/izzy.jpg" alt="" id="img">
+        </div>
+    </div>
+
+    <script>
+        function pro() {
+            document.getElementById("img").src = document.getElementById("s1").value
+        }
+    </script>
+</body>
+
+</html>

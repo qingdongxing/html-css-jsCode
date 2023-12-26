@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            float: left;
+            list-style: none;
+            width: 150px;
+            height: 200px;
+            border: 1px solid red;
+            margin-left: -1px ;
+        } 
+        ul li:hover {
+            /* 如果盒子没有定位，那么鼠标经过给盒子添加绝对定位即可 */
+            position: relative;
+            border:2px solid rgb(43, 0, 255);
+        }
+/*         
+        ul li:hover {
+            如果li都有定位，则利用z-index提高层数
+            z-index: 5;
+            border:2px solid rgb(43, 0, 255);
+        } */
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

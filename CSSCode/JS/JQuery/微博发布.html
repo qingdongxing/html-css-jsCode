@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 485.5px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 100px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="weibo">
+        <span>微博发布</span>
+        <textarea name="" cols="30" rows="10" class="txt"></textarea>
+        <button class="btn">发布</button>
+        <ul>
+        </ul>
+    </div>
+    <script src="JQuery.min.js"></script>
+    <script>
+        $(function () {
+            $("btn").on("click", function () {
+                var li1 = $("<li></li>");
+                // console.log(li1);
+                li1.html($(".txt").val() + '<a href="javascaript:;"">删除</a>');
+                $("ul").prepend(li);
+                li1.slideDown();
+            })
+        })
+    </script>
+
+</body>
+
+</html>

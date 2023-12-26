@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            /* 给父盒子添加flex属性，来控制子盒子的位置和排列方式 */
+            display: flex;
+            width: 60%;
+            height: 200px;
+            background-color: antiquewhite;
+            /* 主轴方向 */
+            /* 沿Y轴 */
+            /* flex-direction: column; */
+            /* 沿X轴 */
+            /* flex-direction: row; */
+            /* 换行 */
+            flex-wrap: wrap;
+            /* 主轴子元素排列方式 */
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+            /* 侧轴子元素排列方式 */
+            /* align-items: flex-start; */
+            /* align-items: end; */
+            /* align-items: center; */
+            /* 拉伸当子元素没有高度时 */
+            /* align-items: stretch; */
+            /* 设置侧轴子元素的排列 要有换行 */
+            /* align-content: center; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: space-around; */
+            align-content: space-between;
+
+        }   
+        section span {
+            width: 150px;
+            height: 70px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+    </section>
+    
+</body>
+</html>

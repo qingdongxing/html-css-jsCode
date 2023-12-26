@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注册页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(R.jpg) no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 240px 137px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+            background-color: rgba(220, 38, 38, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .form-group input {
+            width: 95%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #f2f2f2;
+            color: #000000;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            background-color: #e6e6e6;
+           
+        }
+
+        .form-group button {
+            width: 50%;
+            padding: 10px;
+            /* background-color: #af4c4c; */
+            background-color: #803939;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #af4c4c;
+        }
+
+        .form-sex {
+            color: #ffffff;
+        }
+
+        .form-sex label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .form-sex .sex-content:last-child {
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <h2>注册</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-email">电子邮件</label>
+                    <input type="email" id="confirm-email" name="confirm-email" required>
+                </div>
+                <div class="form-sex">
+                    <label for="sex">性别</label>
+                    <div class="sex-content">
+                        <span><input type="radio" name="sex" value="man"> 男</span>
+                        <span><input type="radio" name="sex" value="famile"> 女</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

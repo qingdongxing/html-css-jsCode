@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //可修改
+        //常量不是一定不能修改的
+        const myobj = {
+            name: "xiaosong"
+            ,
+            age: 100
+        }
+
+        myobj.name = "tiechui"
+        console.log(myobj.name);
+
+        //不可修改
+        //fressze  
+        const myobj1 = Object.freeze({
+            name: "xiaosong"
+            ,
+            age: 100
+        })
+
+        myobj.name = "tiechui"
+
+
+
+    </script>
+</body>
+
+</html>

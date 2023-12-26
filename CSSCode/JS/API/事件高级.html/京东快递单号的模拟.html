@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .jd {
+            transform: translate(200%, 20%);
+        }
+
+        .con {
+            display: none;
+            width: 200px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="search" class="jd">
+    <div class="search">
+        <div class="con"></div>
+        <input type="text" placeholder="请输入你的快递单号" class="dd">
+    </div>
+    <script>
+        var search = document.querySelector('input');
+        document.addEventListener('keyup', function (e) {
+            // console.log(e.keyCode);
+            if (e.keyCode == 83) {
+                search.focus();
+            }
+        })
+    </script>
+    <script>
+        var cons = document.querySelector('.con');
+        var jd_input = document.querySelector('.dd');
+        jd_input.addEventListener('keyup', function (e) {
+            if (this.value == '') {
+                cons.style.display = 'none';
+            } else {
+                cons.style.display = 'block';
+                cons.innerText = this.value
+            }
+        })
+        jd_input.addEventListener('blur',function(){
+            cons.style.display = 'none';
+        })
+    </script>
+</body>
+
+</html>

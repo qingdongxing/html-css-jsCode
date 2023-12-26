@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //无法重复申明
+        // var i = 1;
+        // var i = 2;
+        // let i1 = 1;
+        // let i1 = 2;
+        
+        //报错
+        // var a = 2;
+        // let a = 3;
+        // console.log(a);
+
+        //
+        let name = "qingdong"
+
+        function test(){
+            console.log(name);//暂存性死区
+            let name = "hhhhh"
+        }
+
+        test()
+        let name1 = "qingdong"
+
+        function test(){
+            console.log(name1);//暂存性死区
+            // let name1 = "hhhhh"
+        }
+
+        test()
+
+        let name2 = "qingdong"
+
+        function test(){
+            let name2 = "hhhhh"
+            console.log(name2);//暂存性死区
+           
+        }
+
+        test()
+
+        //不与顶层对象挂钩
+        var myage = 100;
+        console.log(window.myage);
+        let myage1 = 100;
+        console.log(window.myage1);
+
+
+    </script>
+    
+</body>
+</html>

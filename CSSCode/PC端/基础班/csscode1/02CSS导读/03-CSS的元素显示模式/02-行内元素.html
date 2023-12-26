@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素</title>
+    <style>
+        /* 在行内元素中直接设置长宽是没有用的 */
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .hh span {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span>我是光头强 ， 我来砍树了</span><strong>熊大 ，熊二</strong>
+    <span>我是光头强</span> <strong>熊大 ，熊二</strong>
+    <!-- a标签中不能在放a标签了 -->
+    <a href="http://www.baidu.com">
+        <a href=""></a>
+    </a>
+    <!--  -->
+    <a href="雪景图片.jpg">
+        <div>a标签中可以放div</div>
+    </a>
+
+    <div class="hh">
+        <span>11111</span>
+        <span>11111</span>
+        <span>11111</span>
+        <span>11111</span>
+    </div>
+
+
+</body>
+
+</html>

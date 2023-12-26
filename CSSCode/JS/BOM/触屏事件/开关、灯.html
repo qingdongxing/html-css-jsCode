@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg { 
+            background-color: #000;
+        }
+        .bg1 {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body class="bg1">
+    <button>开关</button>
+    <script>
+        // classlist
+        var btn = document.querySelector('button');
+        btn.addEventListener('click',function(){
+            if (document.body.classList == 'bg1'){
+                document.body.classList.remove('bg1');
+                document.body.classList.add('bg');
+            }else if(document.body.classList == 'bg'){
+                document.body.classList.remove('bg');
+                document.body.classList.add('bg1');
+            }
+        })
+    </script>
+    
+</body>
+</html>

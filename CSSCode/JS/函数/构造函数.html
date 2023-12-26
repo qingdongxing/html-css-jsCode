@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 方法一
+        var obj = new Object();
+        obj.uanme = '张三丰';
+        obj.age = 18;
+        obj.sex = '男';
+        obj.sayHi = function() {
+            console.log('hi-');
+        } 
+        console.log(obj.age);
+        console.log(obj.sex);
+        // 方法二
+        function Star(uname , age , sex) {
+            this.uname = uname;
+            this.age = age ;
+            this.sex = sex ;
+        }
+        var xm = new Star('小明',18,'男');
+        console.log(typeof xm);
+        console.log(xm);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

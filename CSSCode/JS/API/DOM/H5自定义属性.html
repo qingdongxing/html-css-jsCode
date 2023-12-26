@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div getTime="20" data-index="2" data-list-name="andy"></div>
+    <script>
+        var divEle = document.querySelector('div');
+        divEle.setAttribute('data-time', 20);
+        console.log(divEle.getAttribute('data-index'));
+        console.log(divEle.getAttribute('data-list-name'));
+        console.log(divEle.dataset);
+        console.log(divEle.dataset.index);
+        console.log(divEle.dataset['index']);
+        console.log(divEle.dataset['listName']);
+
+    </script>
+
+</body>
+
+</html>
